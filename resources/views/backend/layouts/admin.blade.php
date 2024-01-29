@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Nomads Admin</title>
+    <title>Admin</title>
 
     @include('backend.includes.style')
 

@@ -1,13 +1,20 @@
 <?php
 
+
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\GalleryCategoryController;
+use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-// frontend
+// home
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//  gallery
+Route::get('/admin-gallery', [GalleryController::class, 'index'])->name('gallery-index');
+Route::get('/admin-gallery-category', [GalleryCategoryController::class, 'index'])->name('gallery-category-index');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -19,7 +26,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // });
 
 // Backend
-Route::get('/admin', [DashboardController::class, 'index']);
+Route::get('/admin', [DashboardController::class, 'admin']);
+Route::get('/administrator', [DashboardController::class, 'administrator']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

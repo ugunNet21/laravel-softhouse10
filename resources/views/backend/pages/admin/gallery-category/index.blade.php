@@ -9,7 +9,7 @@
             <h1 class="h3 mb-0 text-gray-800">Paket Gallery</h1>
             <a href="" class="btn btn-sm btn-primary shadow-sm">
                 {{-- {{ route('gallery.create') }} --}}
-                <i class="fas fa-plus fa-sm text-white-50">Tambah Gallery</i>
+                <i class="fas fa-plus fa-sm text-white-50">Tambah Category Gallery</i>
             </a>
         </div>
 
@@ -50,11 +50,11 @@
                                     </td>
                                 </tr>
                             {{-- @empty --}}
-                                {{-- <tr>
+                                <tr>
                                     <td colspan="7" class="text-center">
                                         Data Kosong
                                     </td>
-                                </tr> --}}
+                                </tr>
                             {{-- @endforelse --}}
 
                         </tbody>
