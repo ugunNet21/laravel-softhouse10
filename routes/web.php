@@ -27,7 +27,6 @@ Route::get('/admin-gallery-category', [GalleryCategoryController::class, 'index'
 
 // Backend
 Route::get('/admin', [DashboardController::class, 'admin']);
-Route::get('/administrator', [DashboardController::class, 'administrator']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

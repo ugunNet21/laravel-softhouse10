@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin</title>
+    <title>Dashboard</title>
 
     @include('backend.includes.style')
 
@@ -28,14 +28,14 @@
             <!-- Main Content -->
             <div id="content">
 
-                @include('backend.includes.navbar')
+                {{-- @include('backend.includes.navbar') --}}
 
                 @yield('content')
 
             </div>
             <!-- End of Main Content -->
 
-            @include('backend.includes.footer')
+            {{-- @include('backend.includes.footer') --}}
 
         </div>
         <!-- End of Content Wrapper -->
